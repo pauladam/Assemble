@@ -1,7 +1,11 @@
-# assemble.py
+assemble.py
+================================
 
-# TODO
+
+TODO
+================================
 
 
-# DONE
+DONE
+================================
 - Create build tool to combine header / footer w/ various page bodies
