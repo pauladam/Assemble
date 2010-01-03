@@ -8,7 +8,7 @@ import shutil
 # The setting vars are all paths (which means they will be passed to something
 # like file() or glob() etc
 
-ASSET_DIRS       = ['./js', './img']
+ASSET_DIRS       = ['./assets/js', './assets/img']
 PAGES_DIR        = './page_bodies'
 TOP_COMPONENT    = './components/top.html'
 BOTTOM_COMPONENT = './components/bottom.html'
@@ -24,7 +24,8 @@ for f in glob('%s/*' % BUILD_DEST):
 
 print 'copying asset dirs...'
 for dir in ASSET_DIRS:
-  shutil.copytree(dir,'%s/%s' % (BUILD_DEST, dir))
+  last_dir = dir.split('/')[-1]
+  shutil.copytree(dir,'%s/%s' % (BUILD_DEST, last_dir))
 
 print 'generating new pages...'
 for page_body in glob('%s/*' % PAGES_DIR):
