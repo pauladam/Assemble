@@ -10,8 +10,8 @@ import shutil
 
 ASSET_DIRS       = ['./assets/js', './assets/img']
 PAGES_DIR        = './page_bodies'
-TOP_COMPONENT    = './components/top.html'
-BOTTOM_COMPONENT = './components/bottom.html'
+TOP_COMPONENT    = './page_components/top.html'
+BOTTOM_COMPONENT = './page_components/bottom.html'
 BUILD_DEST       = './build' # This guy gets cleaned up (rm *) -before- each run
 
 print 'cleaning build dir...'

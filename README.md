@@ -6,6 +6,7 @@ Configure the assembly by changing the global options at the beginning of assemb
 
 TODO
 ================================
+- remove project specific files from github
 
 DONE
 ================================
