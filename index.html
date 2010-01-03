@@ -15,6 +15,8 @@
       font-family: Lucida Grande, Helvetica Neue,Arial,Helvetica,sans-serif
     }
 
+    #hd{ height: 18px; }
+
     .topbar{ 
       background-image: url('img/topbar.jpg'); 
       background-repeat: repeat-y;
@@ -95,14 +97,42 @@
       padding-left: 8px;
     }
 
+    #contact_us_table{
+      margin-left: 175px;
+      width: 450px;
+      height: 90px;
+      float: left;
+      color: #eee;
+    }
+
+    #contact_us_table td{ 
+
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: bold;
+      text-transform: normal;
+      letter-spacing: -1px;
+      line-height: 1.4em;
+
+    }
+
+    .pink { color: #f6007a; }
+    .blue { color: #3781c7; }
+    
+    #ribbon{
+      float: right;
+      padding-right: 145px;
+      margin-top: -16px;
+
+    }
 
   </style>
 
 </head>
 <body>
 <div id="doc4" class="yui-t7">
-   <div id="hd" role="banner"><h1>HEADER</h1></div>
-
+   <div id="hd" role="banner"></div>
    <div id="bd" role="main">
 
      <div class="yui-g topbar">
@@ -135,17 +165,32 @@
          <div class='left-border'> <span class='year'>2009</span></div>
        </div>
      </div>
-     <div class="yui-g body">
-       MAIN BODY
-     </div>
+     <div class="yui-g body"> </div>
      <div class="yui-g bottombar">
       <div>
-       CONTACT
+        <table id='contact_us_table'>
+          <tr>
+            <td> <img src='img/call_us.png'> </td>
+            <td> <img src='img/send_us.png'> </td>
+            <td> <img src='img/stalk_us.png'> </td>
+          </tr>
+          <tr>
+            <td style='padding-right:32px;'> Interested in booking a bed? Call us now 646.371.9369 </td>
+            <td style='padding-right:32px;'> Send us your questions, comments & awesome <span class='pink'>pink</span> experiences. </td>
+            <td style='width:108px'> <span class='blue'>JOIN US</span><br/> on FACEBOOK <br/><br/> <span class='blue'>FOLLOW US</span><br/> on TWITTER</td>
+            <td> <img src='img/facebook.png'> <img src='img/twitter_bird.png'></td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td> </td>
+            
+          </tr>
+        </table>
+        <img src='img/ribbon.png' id='ribbon'>
       </div>
      </div>
 
   </div>
-
 
 </div>
 <script src='js/jquery-1.3.2.min.js'></script>
