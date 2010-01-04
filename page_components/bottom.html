@@ -33,6 +33,10 @@
     $('.topbar').corners('30px top'); 
     $('.bottombar').corners('30px bottom'); 
     $('.bottombar div').corners('30px bottom'); 
+
+    var clear_value = function(){ this.value = ''; };
+    $('input').click(clear_value);
+    $('textarea').click(clear_value);
   });
 </script>
 </body>

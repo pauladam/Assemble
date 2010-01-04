@@ -45,7 +45,6 @@
     }
 
     .body{
-      height: 532px;
       background-color: #fff;
       border: 4px solid #fff;
       border-bottom: 2px solid #fff;
@@ -103,6 +102,7 @@
       height: 90px;
       float: left;
       color: #eee;
+      margin-top: 3px;
     }
 
     #contact_us_table td{ 
@@ -124,11 +124,10 @@
       float: right;
       padding-right: 145px;
       margin-top: -90px;
-
     }
 
     .tag{
-      bottom:50px; 
+      bottom:47px; 
       left:-550px; 
       position:relative;
     }
@@ -158,22 +157,22 @@
      </div>
      <div class="yui-g navigation">
        <div class='links'>
-         <div class='left-border'> <a href=''>home</a></div>
-         <div class='left-border'> <a href=''>about</a></div>
-         <div class='left-border'> <a href=''>beds</a></div>
-         <div class='left-border'> <a href=''>rates</a></div>
-         <div class='left-border'> <a href=''>booking</a></div>
-         <div class='left-border'> <a href=''>gallery</a></div>
-         <div class='left-border'> <a href=''>reservations</a></div>
-         <div class='left-border'> <a href=''>contact</a></div>
-         <div class='left-border'> <a href=''>press</a></div>
-         <div class='left-border'> <a href=''>location(s)</a></div>
+         <div class='left-border'> <a href='/'>home</a></div>
+         <div class='left-border'> <a href='/'>about</a></div>
+         <div class='left-border'> <a href='products.html'>beds</a></div>
+         <div class='left-border'> <a href='/'>rates</a></div>
+         <div class='left-border'> <a href='/'>booking</a></div>
+         <div class='left-border'> <a href='/'>gallery</a></div>
+         <div class='left-border'> <a href='/'>reservations</a></div>
+         <div class='left-border'> <a href='/'>contact</a></div>
+         <div class='left-border'> <a href='/'>press</a></div>
+         <div class='left-border'> <a href='/'>location(s)</a></div>
          <div class='left-border'> <span class='year'>2009</span></div>
        </div>
      </div>
 
 
-     <div class="yui-g body splash"> </div>
+     <div style='height:532px' class="yui-g body splash"> </div>
 
      <div class="yui-g bottombar">
       <div>
@@ -210,6 +209,10 @@
     $('.topbar').corners('30px top'); 
     $('.bottombar').corners('30px bottom'); 
     $('.bottombar div').corners('30px bottom'); 
+
+    var clear_value = function(){ this.value = ''; };
+    $('input').click(clear_value);
+    $('textarea').click(clear_value);
   });
 </script>
 </body>
